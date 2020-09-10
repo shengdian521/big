@@ -60,10 +60,9 @@ $.ajax({
    }
      layer.msg("登录成功")
    //   得到的token保存到localstorage
-   localStorage.setItem("token",res.token)
+     localStorage.setItem("token",res.token)
      location.href = '/index.html'
 }
 })
-
  })
 })
