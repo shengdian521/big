@@ -81,7 +81,7 @@ $("body").on("click","#shanchu",function(){
     var id=$(this).attr("data-id")
     layer.confirm('要删除吗', {icon: 3, title:'提示'}, function(index){
        $.ajax({
-        method:"get",
+           method:"get",
            url:"/my/article/deletecate/"+id,
           success:function(res){
             if(res.status!==0){
@@ -95,5 +95,6 @@ $("body").on("click","#shanchu",function(){
        
       });
 })
+
 
 })
